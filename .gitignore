@@ -1,0 +1,45 @@
+# ----------------------------------------------------------------------
+# Loại trừ các file và thư mục tự động tạo ra trong dự án Python/ML/Docker
+# ----------------------------------------------------------------------
+
+# Môi trường ảo (Virtual Environment)
+# Loại trừ các thư mục môi trường ảo phổ biến
+venv/
+.venv/
+env/
+.env
+
+# Cache và file tạm
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*~$
+.ipynb_checkpoints
+
+# Thư mục cache của Streamlit
+.streamlit/
+
+# Dữ liệu và Model (Các file có dung lượng lớn)
+# KHÔNG BAO GỒM file model và file dữ liệu lớn
+*.csv
+*.tsv
+*.zip
+*.pt
+*.pth
+*.h5
+*.onnx
+*.safetensors
+*.bin
+
+# Log và Database
+*.log
+*.sqlite3
+*.db
+
+# File Cấu hình của IDE (VS Code, Pycharm,...)
+.idea/
+.vscode/
+
+# Docker Files (không bắt buộc, nhưng nên loại trừ)
+docker-compose.yml.orig
